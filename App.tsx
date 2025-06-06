@@ -341,6 +341,10 @@ const App: React.FC = () => {
                 <EmailIcon className="w-5 h-5 sm:w-6 sm:h-6 mr-3 sm:mr-4 text-brandPurple-light group-hover:text-white transition-colors" />
                 <span className="text-base sm:text-lg text-brandPurple-lighter group-hover:text-white transition-colors">{contactInfo.email}</span>
               </a>              
+              <a href="https://www.linkedin.com/in/venna-tejesh/" className="flex items-center group">
+              <LinkedInIcon className="w-5 h-5 sm:w-6 sm:h-6 mr-3 sm:mr-4 text-brandPurple-light group-hover:text-white transition-colors" />
+              <span className="text-base sm:text-lg text-brandPurple-lighter group-hover:text-white transition-colors">{contactInfo.linkedin}</span>
+            </a>                            
 
               <p className="text-sm sm:text-base text-brandPurple-lightest mt-4 sm:mt-5 pt-2">Feel free to reach out for any inquiries or opportunities. I'm always open to discussing new projects and collaborations.</p>
             </div>
