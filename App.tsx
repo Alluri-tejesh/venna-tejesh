@@ -11,7 +11,7 @@ import {
 
 const resumeData: ResumeData = {
   name: "Venna Venkata Alluri Tejesh",
-  title: "Senior Data Analyst",
+  title: "Senior Data Engineer",
   motto: "Learn to achieve, Explore to excel",
   profileInitial: "T",
   contactInfo: {
@@ -31,14 +31,18 @@ const resumeData: ResumeData = {
     {
       categoryName: "Technical Proficiency",
       skills: [
-        { name: "Python", proficiency: 90 },
-        { name: "Sql", proficiency: 85 },
-        { name: "Data Structures", proficiency: 80 }, // Assuming proficiency
-        { name: "React Js", proficiency: 80 },
-        { name: "Node Js", proficiency: 75 },
-        { name: "Javascript", proficiency: 85 },
-        { name: "R", proficiency: 70 }, // Assuming proficiency
-        { name: "Object Oriented Programming", proficiency: 85 }, // Assuming proficiency
+        { name: "Python", proficiency: 95 }, // Strong focus in Data Engineering + AI
+        { name: "SQL", proficiency: 90 },    // Advanced usage in ETL pipelines
+        { name: "Data Structures & Algorithms", proficiency: 85 },
+        { name: "React.js", proficiency: 80 }, // Frontend for AI apps
+        { name: "Node.js", proficiency: 75 },
+        { name: "JavaScript", proficiency: 85 },
+        { name: "R", proficiency: 70 },        // For statistical modeling/analysis
+        { name: "Object-Oriented Programming", proficiency: 90 },
+        { name: "Airflow", proficiency: 85 },  // Workflow automation
+        { name: "Databricks / Delta Lake", proficiency: 90 }, // Data Engineering
+        { name: "AWS Bedrock & Cloud Services", proficiency: 85 }, // AI + Cloud
+        { name: "Terraform & Docker", proficiency: 80 } // DevOps / Automation, // Assuming proficiency
       ],
     }
   ],
@@ -53,19 +57,32 @@ const resumeData: ResumeData = {
   workExperience: [
     {
       company: "MassMutual",
-      role: "Senior Data Analyst",
+      role: "Senior Data Engineer",
       period: "August, 2022 - Present",
       responsibilities: [
-        "Developed an AI-powered IT Service Desk Agent using AWS Bedrock integrated with ServiceNow, enabling automated ticket classification, intent detection, and natural language responses—reducing average response time by 40%.",
-        "Collaborated with the Data Science team to design and implement complex data transformations.",
-        "Developed and optimized Azure AI Search for Virtual Assistance Chatbot integration.",
-        "Engineered ETL pipelines using Databricks Delta Live Tables for seamless data orchestration.",
-        "Conducted detailed performance analysis for investment teams, delivering actionable insights.",
-        "Managed data ingestion processes to streamline integration with affinity platforms.",
-        "Developed AI-powered applications by integrating Azure AI Search and Generative AI, significantly improving search relevance, content accessibility, and overall user experience for stakeholders, effectively ingesting large volumes of data by processing HTML and PDF pages into structured chunks.",
-        "Designed and implemented a Databricks Ingestion Framework, ensuring scalable and efficient data processing.",
+       "Designed and deployed an AI-powered IT Service Desk Agent using AWS Bedrock, Langflow, and ServiceNow APIs, automating ticket resolution and reducing response times by 40%.",
+        "Built HRSD AI Agent leveraging AWS Bedrock + Terraform, cutting HR workload by 39% and saving significant manual effort.",
+        "Implemented Retrieval Augmented Generation (RAG) pipelines with Azure AI Search and Vector Databases, improving accuracy of responses by 35%.",
+        "Automated data quality checks and monitoring with Databricks Delta Live Tables + Airflow, ensuring pipeline reliability and freeing 20+ engineer-hours/week.",
+        "Integrated AI-driven validation for legacy XML-based systems (Informatica, Informix), reducing manual reconciliation by 80%.",
+        "Collaborated with DevOps teams to containerize AI microservices using Docker, deployed via Terraform + AWS Lambda for scalable low-latency inference.",
+        "Developed AI-powered applications by integrating Azure AI Search and Generative AI, improving search relevance, content accessibility, and processing large volumes of HTML and PDF data into structured chunks.",
+        "Designed and implemented a Databricks Ingestion Framework to ensure scalable, efficient data processing for multiple business pipelines."
       ],
-      tags: ["Databricks", "Azure AI Search", "ETL", "Generative AI", "Python", "SQL","AWS Bedrock"]
+      tags: [  "Databricks",
+        "Delta Live Tables",
+        "Airflow",
+        "ETL",
+        "Generative AI",
+        "Python",
+        "SQL",
+        "AWS Bedrock",
+        "Terraform",
+        "Docker",
+        "Azure AI Search",
+        "RAG Pipelines",
+        "Vector Databases",
+        "ServiceNow"]
     },
   ],
   trainings: [
@@ -358,7 +375,7 @@ const App: React.FC = () => {
                     <div className="absolute inset-y-0 left-0 pl-3 sm:pl-3.5 flex items-center pointer-events-none">
                       <UserIcon className="h-4 w-4 sm:h-5 sm:w-5 text-brandPurple-light" aria-hidden="true" />
                     </div>
-                    <input type="text" name="name" id="name" required className="text-sm sm:text-base bg-brandPurple-darker focus:ring-brandPurple-light focus:border-brandPurple-light block w-full pl-9 sm:pl-10 pr-3 py-2.5 sm:py-3 border border-brandPurple-dark rounded-md placeholder-brandPurple-lighter text-white" placeholder="John Doe" />
+                    <input type="text" name="name" id="name" required className="text-sm sm:text-base bg-brandPurple-darker focus:ring-brandPurple-light focus:border-brandPurple-light block w-full pl-9 sm:pl-10 pr-3 py-2.5 sm:py-3 border border-brandPurple-dark rounded-md placeholder-brandPurple-lighter text-white" placeholder="Venna Tejesh" />
                   </div>
                 </div>
                 <div>
@@ -367,7 +384,7 @@ const App: React.FC = () => {
                     <div className="absolute inset-y-0 left-0 pl-3 sm:pl-3.5 flex items-center pointer-events-none">
                       <EmailIcon className="h-4 w-4 sm:h-5 sm:w-5 text-brandPurple-light" aria-hidden="true" />
                     </div>
-                  <input type="email" name="email" id="email" required className="text-sm sm:text-base bg-brandPurple-darker focus:ring-brandPurple-light focus:border-brandPurple-light block w-full pl-9 sm:pl-10 pr-3 py-2.5 sm:py-3 border border-brandPurple-dark rounded-md placeholder-brandPurple-lighter text-white" placeholder="you@example.com" />
+                  <input type="email" name="email" id="email" required className="text-sm sm:text-base bg-brandPurple-darker focus:ring-brandPurple-light focus:border-brandPurple-light block w-full pl-9 sm:pl-10 pr-3 py-2.5 sm:py-3 border border-brandPurple-dark rounded-md placeholder-brandPurple-lighter text-white" placeholder="@gmail.com" />
                   </div>
                 </div>
                 <div>
