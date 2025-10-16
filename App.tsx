@@ -11,7 +11,7 @@ import {
 
 const resumeData: ResumeData = {
   name: "Venna Venkata Alluri Tejesh",
-  title: "Senior Data Engineer",
+  title: "Senior Data Analyst",
   motto: "Learn to achieve, Explore to excel",
   profileInitial: "T",
   contactInfo: {
