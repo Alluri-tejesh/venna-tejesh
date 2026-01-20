@@ -7,7 +7,7 @@ export const PERSONAL_INFO = {
   email: "tejeshvenna@gmail.com",
   github: "https://github.com/Alluri-tejesh", 
   linkedin: "https://www.linkedin.com/in/venna-tejesh/",
-  resumeLink: "pages/src/TejeshAIE.pdf" 
+  resumeLink: "/venna-tejesh/assets/TejeshAIE.pdf" 
 };
 
 export const PROJECTS: Project[] = [
