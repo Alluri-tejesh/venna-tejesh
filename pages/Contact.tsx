@@ -70,12 +70,14 @@ const Contact: React.FC = () => {
             The best way to reach me is via email.
           </p>
           
-          <a 
-            href={`mailto:${PERSONAL_INFO.email}`} 
-            className="text-2xl font-bold text-primary-600 hover:text-primary-700 transition-colors"
-          >
-            {PERSONAL_INFO.email}
-          </a>
+        <a
+          href={`mailto:${PERSONAL_INFO.email}`}
+          className="font-bold text-primary-600 hover:text-primary-700 transition-colors"
+          style={{ fontSize: "clamp(1rem, 2.5vw, 2rem)" }}
+        >
+          {PERSONAL_INFO.email}
+        </a>
+
         </div>
       </div>
 
